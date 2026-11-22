@@ -1,5 +1,9 @@
 # nanocode + Inkling 2 Small
 
+Status: LOCAL ONLY — this repository provides a local proxy and setup recipe, not a hosted agent service; next human action: validate the documented sample in your own supported nanocode/Tinker environment before relying on the integration.
+
+Acceptance evidence: [2026-11-22 audit](notes/acceptance-audit-2026-11-22.md). The dated run below is historical evidence, not a fresh verification of the current upstream services.
+
 Run [nanocode](https://github.com/nanocodexyz/nanocode) (`nc`), the Rust agent engine
 that runs Codex and Claude harnesses, with
 [Thinking Machines Inkling 2 Small](https://thinkingmachines.ai/news/inkling-2-small/)
@@ -110,4 +114,3 @@ above costs a fraction of a cent.
 
 - `tinker-proxy.py` — localhost proxy: Bearer → `x-api-key` swap + model rewrite.
 - `demo/` — sample workspace for the first run.
-- `src-ref/` — nanocode source excerpts used to verify the wiring (not needed to run).
